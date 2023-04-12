@@ -1,0 +1,19 @@
+.title-section{
+    .subTitle{
+        color: var(--second-color);
+        font-size: 1rem;
+    }
+    .center-title{
+        width: 50%;
+        margin: auto;
+    }
+    .title{
+        color: var(--heading-text-color);
+        font-weight: bold;
+        font-size: 2.4rem;
+        @media (max-width: 768px) {
+            width: 80%;
+            font-size: 2rem;
+        }
+    }
+}

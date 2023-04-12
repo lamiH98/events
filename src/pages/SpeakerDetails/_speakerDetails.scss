@@ -1,0 +1,165 @@
+.speaker-details{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #fbfbfb;
+    .title{
+        color: #001376;
+    }
+    .speaker-img{
+        transition: 0.5s;
+        background-color: #fff;
+        padding: 2rem 0;
+        position: relative;
+        box-shadow: var(--box-shadow);
+        border-radius: 1rem;
+        &::before{
+            content: "";
+            background-image: url(../../assets/images/speakers/speaker-bg.png);
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        img{
+            border-radius: 50%;
+            border-width: 0.6rem;
+            border-style: solid;
+            max-width: 100%;
+            object-fit: cover;
+            @media (max-width: 480px) {
+                margin: auto;
+                text-align: center;
+            }
+        }
+        .img-content{
+            margin-top: 1.5rem;
+            .name{
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    color: var(--main-color);
+                }
+            }
+            .job{
+                color: #999;
+            }
+            .social-links{
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                .icon{
+                    margin-right: 1rem;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    background-color: #37abee;
+                    display: inline-block;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    line-height: 2.2rem;
+                    color: #fff;
+                    border-radius: 50%;
+                    &:first-child{
+                        background-color: #374ccb;
+                    }
+                    &:last-child{
+                        background-color: #d64145;
+                    }
+                }
+            }
+        }
+    }
+    .speaker-info{
+        li{
+            margin-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 2rem;
+            span{
+                font-size: 1.1rem;
+                &:first-child{
+                    color: #001376;
+                    font-weight: bold;
+                    text-align: right;
+                }
+                &:last-child{
+                    color: #555;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .speaker-content{
+        @media (max-width: 991px) {
+            margin-top: 3rem;
+        }
+        p{
+            color: #555;
+            margin-top: 1.8rem;
+        }
+    }
+    .speaker-session{
+        margin-top: 3rem;
+        .title{
+            font-weight: bold;
+        }
+        .speaker-session-info{
+            margin-top: 3rem;
+            border: 1px solid #d7d7d7;
+            padding: 3rem 2rem;
+            border-bottom: 3px solid #ffba00;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #071248;
+                width: 100%;
+                height: 0;
+                z-index: -1;
+                transition: .5s;
+            }
+            &:hover{
+                &::before{
+                    height: 100%;
+                }
+                .place{
+                    color: #fff;
+                    span{
+                        color: #ffba00;
+                    }
+                }
+            }
+            .day{
+                color: #fe00c5;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            .time{
+                color: #ffba00;
+                font-weight: 600;
+                margin-bottom: 1.4rem;
+                font-size: 1.1rem;
+            }
+            .place{
+                color: #555;
+                transition: .5s;
+                font-size: 1.15rem;
+                span{
+                    color: #001376;
+                    font-weight: bold;
+                    transition: .5s;
+                    font-size: 1.1rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

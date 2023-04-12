@@ -1,0 +1,29 @@
+@import './helpers/variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+mt-10{
+    margin-top: 10rem !important;
+}
+mb-10{
+    margin-bottom: 10rem !important;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    a{
+        text-decoration: none;
+    }
+    .text-muted{
+        color: #a1a5b7 !important;
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+}

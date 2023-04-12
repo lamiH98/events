@@ -1,0 +1,58 @@
+.team-single{
+    margin-top: 3rem;
+    &:hover{
+        .team-img{
+            transform: scale(1.1) rotate(-10deg);
+        }
+        .circle{
+            transform: scale(1.3) translateX(-10px);
+        }
+    }
+    .team-img{
+        transition: 0.5s;
+        img{
+            border-radius: 50%;
+            border-width: 0.6rem;
+            border-style: solid;
+            @media (max-width: 480px) {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+    .team-content{
+        background-color: #fff;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        display: inline-block;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        padding: 0.8rem 2rem;
+        border-radius: 0.5rem;
+        position: relative;
+        .name{
+            font-weight: bold;
+            color: var(--heading-text-color);
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                color: var(--main-color);
+            }
+        }
+        span{
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+        .circle{
+            position: absolute;
+            bottom: -1rem;
+            left: -1rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.5s;
+        }
+    }
+}

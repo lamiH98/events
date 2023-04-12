@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+.header{
+  background-image: url(../../../../assets/images/header/header.jpeg);
+  background-size: cover;
+  height: 120vh;
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0541da;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  .header-bg-img{
+    max-width: 710px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+  }
+  .header-content{
+    background-image: url(../../../../assets/images/header/header-4.svg);
+    position: absolute;
+    height: 550px;
+    max-width: 800px;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-25%);
+    background-repeat: no-repeat;
+    text-align: center;
+    @media (max-width: 767px) {
+      left: 0%;
+      height: 450px;
+      top: 30%;
+    }
+    @media (max-width: 561px) {
+      left: 0%;
+      height: 350px;
+    }
+    .title{
+      margin-top: 5rem;
+      color: #fff;
+      width: 80%;
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: 'Big Shoulders Display', cursive;
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+        width: 100%;
+      }
+    }
+    .year{
+      color: var(--color-1);
+      font-weight: bold;
+      font-size: 10rem;
+      font-family: 'Big Shoulders Display', cursive;
+    }
+    .location{
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      padding: 0.7rem 2rem;
+      font-size: 1.1rem;
+      transform: rotate(-6deg);
+      font-weight: 600;
+    }
+    .shape-1{
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-right: 130px solid #00acee;
+      border-bottom: 15px solid transparent;
+      position: absolute;
+      top: -25px;
+      right: 48%;
+    }
+    .shape-2{
+      width: 0px;
+      height: 0px;
+      border-top: 45px solid transparent;
+      border-left: 190px solid #f9d464;
+      border-bottom: 0 solid transparent;
+      position: absolute;
+      top: -10px;
+      left: 30px;
+      transform: rotate(-8deg);
+    }
+    .shape-3{
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 180px solid #f9d464;
+      border-bottom: 0px solid transparent;
+      position: absolute;
+      bottom: 24%;
+      right: -40px;
+      transform: rotate(8deg);
+    }
+  }
+  .floating-images{
+    img{
+      position: absolute;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    .img-1{
+      width: 7rem;
+      left: 2rem;
+      top: 20%;
+      animation: top-bottom-animate 15s infinite;
+    }
+    .img-2{
+      top: 10%;
+      right: 10%;
+      animation: round-animate 80s infinite;
+    }
+  }
+}
+
+@keyframes round-animate {
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+@keyframes top-bottom-animate {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

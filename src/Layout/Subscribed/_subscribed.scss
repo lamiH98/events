@@ -1,0 +1,42 @@
+.subscribed{
+    background-image: url(../../assets/images/subscribed.jpg);
+    background-size: 100% 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 10rem;
+    .subscribed-content{
+        span{
+            color: #fff;
+            font-weight: 500;
+        }
+        .title{
+            margin-top: 1rem;
+            color: #081245;
+            font-weight: bold;
+        }
+    }
+    .subscribed-form{
+        background-color: #fff;
+        height: 5rem;
+        display: flex;
+        position: relative;
+        padding-right: 200px;
+        input{
+            display: block;
+            height: 5rem;
+            width: 100%;
+            color: #555;
+            padding: 25px 30px;
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+        .custom-button{
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            min-width: 150px;
+        }
+    }
+}

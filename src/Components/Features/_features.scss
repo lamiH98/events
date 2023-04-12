@@ -1,0 +1,35 @@
+.features{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    .feature-single{
+        margin-top: 3rem;
+        text-align: center;
+        border: 1px solid #eee;
+        padding: 3rem 0;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .feature-img{
+            margin-bottom: 1rem;
+            img{
+                width: 3.8rem;
+            }
+        }
+        .feature-content{
+            h5{
+                font-weight: bold;
+                color: var(--heading-text-color)
+            }
+            p{
+                color: #555;
+            }
+            h6{
+                a{
+                    color: var(--second-color);
+                }
+            }
+        }
+    }
+}

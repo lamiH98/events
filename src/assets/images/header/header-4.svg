@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1904.000000 1521.000000" preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="10%" style="stop-color: #c40378"/>
+                                    <stop offset="90%" style="stop-color:#ff3866"/>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.000000,1521.000000) scale(0.100000,-0.100000)" fill="url(#grad1)">
+                                <path d="M9505 14211 l-9500 -997 3 -34 c8 -94 1739 -13170 1744 -13175 4 -4 15636 1194 15645 1199 1 1 369 3140 818 6976 448 3836 818 6987 821 7003 5 22 2 27 -13 26 -10 -1 -4293 -450 -9518 -998z"/>
+                            </g>
+                        </svg>

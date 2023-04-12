@@ -1,0 +1,165 @@
+.about{
+    margin-top: 10rem;
+    .about-details{
+        color: var(--text-color);
+        margin-top: 2rem;
+    }
+    .date-boxes{
+        .box-one, .box-tow{
+            background: linear-gradient(45deg, #000b46 0%, #001166 100%);
+            padding: 2rem 1rem;
+            color: #fff;
+            text-align: center;
+            .number{
+                font-size: 3.5rem;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            .subTitle{
+                text-transform: uppercase;
+                font-weight: 500;
+                display: inline-block;
+                padding-bottom: 0.5rem;
+            }
+            .title{
+                width: 80%;
+                margin: auto;
+                padding-top: 1rem;
+                position: relative;
+                &::before{
+                    content: "";
+                    background: #ffae00;
+                    width: 3rem;
+                    height: 0.15rem;
+                    position: absolute;
+                    top: 0.2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .box-tow{
+            background: linear-gradient(90deg, #ffc600 1%, #ff6c00 100%);
+            position: relative;
+            top: 3rem;
+            left: -2rem;
+            z-index: -1;
+            color: #000b46;
+            .title{
+                color: #fff;
+                &::before{
+                    background: #000b46;
+                }
+            }
+        }
+    }
+    .about-counter{
+        background: url(../../assets/images/about/counter-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 10rem;
+        width: 70%;
+        margin: auto;
+        margin-top: 2.5rem;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 3;
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            background: none;
+            background: linear-gradient(90deg, #ffc600 1%, #ff6c00 100%);
+            height: 100%;
+        }
+        .about-counter-single{
+            position: relative;
+            margin-right: 2rem;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 1rem;
+                right: -50%;
+                background: #fff;
+                width: 0.1rem;
+                height: 4rem;
+                @media (max-width: 768px) {
+                    right: -10%;
+                }
+            }
+            &.last-one{
+                &::before{
+                    width: 0;
+                    height: 0;
+                    @media (max-width: 768px) {
+                        width: 0.1rem;
+                        height: 4rem;
+                    }
+                }
+            }
+            .number{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .title{
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+    .about-video{
+        position: relative;
+        &::after{
+            content: "";
+            background: url(../../assets/images/about/about-img-2.png);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 3rem;
+            left: 0;
+        }
+        .about-video-img{
+            position: relative;
+            bottom: 2rem;
+            z-index: 1;
+            &::before{
+                content: "";
+                background-color: #000934;
+                opacity: 0.5;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .about-video-box{
+            background-color: #001166;
+            padding: 2rem;
+            position: relative;
+            left: 6rem;
+            top: 6rem;
+            z-index: 2;
+            @media (max-width: 576px) {
+                left: 0;
+            }
+            .title{
+                color: var(--main-color);
+                font-weight: bold;
+            }
+            p{
+                color: #fff;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                line-height: 1.7;
+            }
+        }
+    }
+}
